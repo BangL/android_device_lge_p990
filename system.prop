@@ -25,3 +25,6 @@ persist.sys.usb.config=mtp,adb
 
 # For the default value of agps
 ro.ril.def.agps.mode=1
+
+#enable purgeable assets
+persist.sys.purgeable_assets=1
