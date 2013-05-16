@@ -1,5 +1,7 @@
 # The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_eu.mk)
+#$(call inherit-product, device/common/gps/gps_eu.mk)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/gps.conf:/system/etc/gps.conf
 
 $(call inherit-product, device/lge/star-common/star.mk)
 
