@@ -22,3 +22,6 @@ ro.telephony.ril_class=LGEInfineon
 persist.radio.rr.enable=1
 
 persist.sys.usb.config=mtp,adb
+
+# For the default value of agps
+ro.ril.def.agps.mode=1
