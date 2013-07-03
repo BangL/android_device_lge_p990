@@ -28,3 +28,8 @@ ro.ril.def.agps.mode=1
 
 #enable purgeable assets
 persist.sys.purgeable_assets=1
+
+#Debugging
+persist.service.adb.enable=1
+ro.adb.secure=0
+ro.debuggable=1
