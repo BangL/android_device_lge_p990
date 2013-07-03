@@ -17,7 +17,9 @@ dalvik.vm.dexopt-flags=m=y,u=n,v=n,o=v
 
 ro.telephony.ril_class=LGEInfineon
 
-#
+# Disable Sending Usage Data
+ro.config.nocheckin=1
+
 # Enable RIL recovery
 persist.radio.rr.enable=1
 
