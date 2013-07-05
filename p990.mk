@@ -25,6 +25,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/check_sdcard.sh:system/bin/check_sdcard.sh \
     $(LOCAL_PATH)/lgdrm.img:system/bin/lgdrm.img
 
+ifdef TARGET_PREBUILT_KERNEL
+    PRODUCT_COPY_FILES += \
+        $(TARGET_PREBUILT_KERNEL):kernel \
+        $(LOCAL_PATH)/kernel/bthid.ko:system/lib/modules/bthid.ko \
+        $(LOCAL_PATH)/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+        $(LOCAL_PATH)/kernel/wireless.ko:system/lib/modules/wireless.ko \
+        $(LOCAL_PATH)/kernel/zram.ko:system/lib/modules/zram.ko \
+        $(LOCAL_PATH)/kernel/alsa_amixer:system/xbin/alsa_amixer \
+        $(LOCAL_PATH)/kernel/95kowalski:system/etc/init.d/95kowalski \
+        $(LOCAL_PATH)/kernel/power.tegra.so:system/lib/hw/power.tegra.so \
+        $(LOCAL_PATH)/kernel/KowalskiManager.apk:system/app/KowalskiManager.apk
+endif
+
 PRODUCT_PACKAGES += \
     lgcpversion
 

@@ -1,0 +1,4 @@
+#!/system/bin/sh
+
+# Enable the ZRAM kernel module
+insmod /system/lib/modules/zram.ko
