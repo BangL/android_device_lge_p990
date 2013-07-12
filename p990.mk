@@ -1,5 +1,4 @@
 # The gps config appropriate for this device
-#$(call inherit-product, device/common/gps/gps_eu.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/gps.conf:/system/etc/gps.conf
 
@@ -21,10 +20,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.vsnet:system/bin/init.vsnet \
     $(LOCAL_PATH)/init.vsnet-down:system/bin/init.vsnet-down \
     $(LOCAL_PATH)/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
-
-# Build kernel module instead of copying
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/check_sdcard.sh:system/bin/check_sdcard.sh \
