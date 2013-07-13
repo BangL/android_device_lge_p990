@@ -155,3 +155,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable root access
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
+
+# Try to get "temasek version" from global var
+ifeq ($(TEMASEK_VERSION),)
+  TEMASEK_VERSION := Unknown
+endif
+ADDITIONAL_BUILD_PROPERTIES += ro.temasek.version=$(TEMASEK_VERSION)
