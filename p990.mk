@@ -44,3 +44,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_NAME := full_p990
 PRODUCT_DEVICE := p990
 PRODUCT_MODEL := LG-P990
+
+# Try to get "temasek version" from global var
+ifeq ($(TEMASEK_VERSION),)
+  TEMASEK_VERSION := Unkown-Private-Build
+endif
+ADDITIONAL_BUILD_PROPERTIES += ro.temasek.version=$(TEMASEK_VERSION)
