@@ -26,7 +26,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lgdrm.img:system/bin/lgdrm.img
 
 PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel \
+    $(LOCAL_PATH)/kernel/zImage:kernel \
     $(LOCAL_PATH)/kernel/bthid.ko:system/lib/modules/bthid.ko \
     $(LOCAL_PATH)/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
     $(LOCAL_PATH)/kernel/wireless.ko:system/lib/modules/wireless.ko \
