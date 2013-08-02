@@ -16,8 +16,8 @@ on fs
 
 on post-fs
 ## LGE
-    mkdir /data/nv     
-    chown system system /data/nv       
+    mkdir /data/nv
+    chown system system /data/nv
     chmod 0711 /data/nv
 
     mkdir /data/ve
