@@ -26,9 +26,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/check_sdcard.sh:system/bin/check_sdcard.sh
-
-PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel/zImage:kernel \
     $(LOCAL_PATH)/kernel/bthid.ko:system/lib/modules/bthid.ko \
     $(LOCAL_PATH)/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
