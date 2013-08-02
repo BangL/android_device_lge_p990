@@ -27,8 +27,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/check_sdcard.sh:system/bin/check_sdcard.sh \
-    $(LOCAL_PATH)/lgdrm.img:system/bin/lgdrm.img
+    $(LOCAL_PATH)/check_sdcard.sh:system/bin/check_sdcard.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel/zImage:kernel \
