@@ -1,9 +1,10 @@
 # Android fstab file.
-#<src>			<mnt_point>	<type>	<mnt_flags and options>								<fs_mgr_flags>
-/dev/block/mmcblk0p6	/boot		emmc	defaults									recoveryonly
-/dev/block/mmcblk0p12	/system		ext4	ro,barrier=1									wait
-/dev/block/mmcblk0p2	/cache		ext4	noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic	wait
-/dev/block/mmcblk0p7	/lgdrm		ext3	noatime,nosuid,nodev,barrier=1							wait
-/dev/block/mmcblk0p9	/data		ext4	noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic	wait,check
-/dev/block/mmcblk0p11	/sdcard		auto	defaults									voldmanaged=sdcard:auto
-/dev/block/mmcblk1p1	/sdcard1	auto	defaults									voldmanaged=sdcard1:auto
+#<src>                 <mnt_point>       <type>  <mnt_flags and options>                                      <fs_mgr_flags>
+/dev/block/mmcblk0p12  /system           ext4    ro                                                           wait
+/dev/block/mmcblk0p2   /cache            ext4    noatime,nosuid,nodev,data=writeback,nodelalloc,errors=panic  wait
+/dev/block/mmcblk0p9   /data             ext4    noatime,nosuid,nodev,data=writeback,nodelalloc,errors=panic  wait
+/dev/block/mmcblk0p7   /lgdrm            ext3    noatime,nosuid,nodev,errors=panic                            wait
+/dev/block/mmcblk0p6   /boot             emmc    defaults                                                     defaults
+/dev/block/mmcblk0p8   /recovery         emmc    defaults                                                     defaults
+/dev/block/mmcblk0p11  /storage/sdcard   emmc    defaults                                                     nonremovable,voldmanaged=sdint:auto
+/dev/block/mmcblk1p1   /storage/sdcard1  auto    defaults                                                     voldmanaged=sdext:auto
