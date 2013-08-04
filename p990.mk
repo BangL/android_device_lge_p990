@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     $(foreach f,$(wildcard $(LOCAL_PATH)/prebuilt/res/images/security/*),$(f):root/res/images/security/$(notdir $(f)))
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/init.vsnet:system/bin/init.vsnet \
     $(LOCAL_PATH)/init.vsnet-down:system/bin/init.vsnet-down \
     $(LOCAL_PATH)/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
