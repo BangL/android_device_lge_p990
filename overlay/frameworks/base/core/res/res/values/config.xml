@@ -130,4 +130,7 @@
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">8</integer>
 
+    <!-- Boolean to enable adb by default -->
+    <bool name="config_enableAdbByDefault">true</bool>
+
 </resources>
