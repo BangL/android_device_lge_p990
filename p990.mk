@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.star.usb.rc:root/init.star.usb.rc \
     $(LOCAL_PATH)/rootdir/init_recovery.rc:root/init_recovery.rc \
     $(LOCAL_PATH)/rootdir/ueventd.tegra.rc:root/ueventd.star.rc \
-    $(LOCAL_PATH)/rootdir/fstab.p990:root/fstab.p990
+    $(LOCAL_PATH)/rootdir/fstab.star:root/fstab.star
 
 # Charger fix
 PRODUCT_COPY_FILES += \
