@@ -27,7 +27,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/check_sdcard.sh:system/bin/check_sdcard.sh
+    $(LOCAL_PATH)/prebuilt/check_sdcard.sh:system/bin/check_sdcard.sh \
+    $(LOCAL_PATH)/prebuilt/lgdrm.img:system/bin/lgdrm.img
 
 PRODUCT_PACKAGES += \
     lgcpversion
