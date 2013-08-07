@@ -11,12 +11,12 @@ include $(BUILD_SYSTEM)/base_rules.mk
 $(LOCAL_BUILT_MODULE): TARGET := /cache/srec/
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/usr/srec/en-US
 $(LOCAL_BUILT_MODULE):
-        $(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-        $(hide) mkdir -p $(dir $@)
-        $(hide) mkdir -p $(dir $(SYMLINK))
-        $(hide) rm -rf $@
-        $(hide) rm -rf $(SYMLINK)
-        $(hide) ln -sf $(TARGET) $(SYMLINK)
-        $(hide) touch $@
+	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
 
 endif
