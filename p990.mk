@@ -30,6 +30,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/check_sdcard.sh:system/bin/check_sdcard.sh \
     $(LOCAL_PATH)/prebuilt/lgdrm.img:system/bin/lgdrm.img
 
+# prebuilt kowalski kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/kernel/zImage:kernel \
+    $(LOCAL_PATH)/prebuilt/kernel/bthid.ko:system/lib/modules/bthid.ko \
+    $(LOCAL_PATH)/prebuilt/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    $(LOCAL_PATH)/prebuilt/kernel/wireless.ko:system/lib/modules/wireless.ko \
+    $(LOCAL_PATH)/prebuilt/kernel/zram.ko:system/lib/modules/zram.ko \
+    $(LOCAL_PATH)/prebuilt/kernel/alsa_amixer:system/xbin/alsa_amixer \
+    $(LOCAL_PATH)/prebuilt/kernel/95kowalski:system/etc/init.d/95kowalski \
+    $(LOCAL_PATH)/prebuilt/kernel/power.tegra.so:system/lib/hw/power.tegra.so \
+    $(LOCAL_PATH)/prebuilt/kernel/KowalskiManager.apk:system/app/KowalskiManager.apk
+
 PRODUCT_PACKAGES += \
     lgcpversion
 
