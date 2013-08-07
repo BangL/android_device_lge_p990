@@ -12,8 +12,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.p990:root/fstab.p990
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.vsnet:system/bin/init.vsnet \
-    $(LOCAL_PATH)/init.vsnet-down:system/bin/init.vsnet-down
+    $(LOCAL_PATH)/configs/init.vsnet:system/bin/init.vsnet \
+    $(LOCAL_PATH)/configs/init.vsnet-down:system/bin/init.vsnet-down
 
 # Charger fix
 PRODUCT_COPY_FILES += \
