@@ -11,7 +11,7 @@
 /dev/block/mmcblk0p8   /recovery         emmc    defaults                                                     recoveryonly
 
 /dev/block/mmcblk0p11  /sdcard           vfat    defaults                                                     recoveryonly
-/dev/block/mmcblk0p11  /storage/sdcard   emmc    defaults                                                     voldmanaged=sdcard0:11,nonremovable
+/dev/block/mmcblk0p11  /storage/sdcard0  emmc    defaults                                                     voldmanaged=sdcard0:11,nonremovable
 
 /dev/block/mmcblk1p1   /external_sd      vfat    defaults                                                     recoveryonly
 /dev/block/mmcblk1p1   /storage/sdcard1  auto    defaults                                                     voldmanaged=sdcard1:auto
