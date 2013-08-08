@@ -152,3 +152,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable debugging
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1
+
+# Enable root access
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=1
