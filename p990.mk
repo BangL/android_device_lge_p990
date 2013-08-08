@@ -1,5 +1,5 @@
 # Inherit non-open-source blobs.
-$(call inherit-product-if-exists, $(LOCAL_PATH)/p990-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/p990/p990-vendor.mk)
 
 # Settings
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
