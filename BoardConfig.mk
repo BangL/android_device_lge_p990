@@ -19,6 +19,7 @@ ARCH_ARM_USE_NON_NEON_MEMCPY := true
 TARGET_SPECIFIC_HEADER_PATH := device/lge/p990/include
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/lge/p990/releasetools/p990-newbl_ota_from_target_files
 COMMON_GLOBAL_CFLAGS += -DICS_AUDIO_BLOB -DICS_CAMERA_BLOB
+TARGET_USE_PIPE=true
 
 # Ril
 BOARD_RIL_CLASS := ../../../device/lge/p990/ril/
