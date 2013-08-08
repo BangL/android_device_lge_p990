@@ -1,7 +1,7 @@
 import init.cm-star.rc
 
 on early-init
-    mount debugfs /sys/kernel/debug /sys/kernel/debug
+    mount debugfs /sys/kernel/debug
 
 on fs
 # mount partitions
