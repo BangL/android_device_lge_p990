@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.adb.enable=1 \
     ro.adb.secure=0 \
+    ro.secure=0 \
     persist.sys.usb.config=mtp,adb
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/20-mtp:system/etc/init.d/20-mtp
