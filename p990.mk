@@ -94,8 +94,6 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     hwcomposer.default \
     com.android.future.usb.accessory \
-    camerawrapper \
-    camera.tegra \
     Torch \
     lgcpversion
 
