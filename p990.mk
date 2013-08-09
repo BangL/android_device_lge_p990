@@ -14,7 +14,7 @@ PRODUCT_MODEL := LG-P990
 
 # Board-specific init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.p990.rc:root/init.star.rc \
+    $(LOCAL_PATH)/rootdir/init.star.rc:root/init.star.rc \
     $(LOCAL_PATH)/rootdir/init.cm-star.rc:root/init.cm-star.rc \
     $(LOCAL_PATH)/rootdir/init.star.usb.rc:root/init.star.usb.rc \
     $(LOCAL_PATH)/rootdir/init_recovery.rc:root/init_recovery.rc \
